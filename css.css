@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+    
+}
+
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif, serif, Arial; 
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #f7f6f2;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    padding: 3em 1em;
+}
+
+/* tekst stylen */
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif, Arial;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin-bottom: .75rem;
+}
+
+h3{
+    font-family: Arial;
+    margin-bottom: .75rem;
+}
+
+p{
+    font-family: Arial;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: .5rem;
+
+}
+
+
+/* navbar */
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    border-bottom: 1px solid #F0EEED; 
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+  
+.navbar #links {
+    display: none;
+    margin: auto;
+}
+
+.navbar #links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  
+.navbar a.icon {
+    background: black;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 1.5em;
+}
+
+  
+
+#links a:hover{
+    background-color: darkgreen;
+    color: #F0EEED;
+    font-weight: bold;
+}
+
+/*
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    border-bottom: 1px solid #F0EEED;
+    font-family: arial;
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    font-size: 15px;
+    transition: 1s;
+}
+
+nav a{
+    display: inline-block;
+    padding: 14px 16px;
+    color: #F0EEED;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+nav a:hover{
+    background-color: darkgreen;
+    color: #F0EEED;
+    font-weight: bold;
+}
+*/
+
+
+
+/*main content*/
+header{
+    padding: 0em 0 0;
+}
+
+
+.header--section{
+    background-color: rgba(37, 37, 37, 0.8); 
+    padding: 10px 10px;
+    border-radius: .35em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+
+/* onze missie */
+
+.intro{
+    background-color: black;
+    background-image: url(/Img/4\ -\ NuuHhZL.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #F0EEED;
+    padding: 15vh 1em;   
+}
+
+.header--section--missie{
+    background-color: rgba(37, 37, 37, 0.8); 
+    padding: 10px 10px;
+    border-radius: .35em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+/*thee van de maand*/
+
+.onze-thee{
+    background-color: #F0EEED;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 3em;
+}
+
+.gallerij-container{
+    max-width: 100%;
+    background-color: #F0EEED;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .2);
+}
+
+.gallerij-container img{
+    transition: transform 250ms;  
+}
+
+.gallerij-container img:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 8px black;
+}
+
+.desc {
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 8px;
+    letter-spacing: 2px;
+    color: black;
+  }
+
+/*locaties*/
+.locaties{
+    background-color: black;
+    background-image: url(/Img/1\ -\ ME2WNoD.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #F0EEED;
+    padding: 15vh 1em;   
+}
+
+.tabel-locaties{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-one , .table-two , .table-three{
+    background: rgba(37, 37, 37, 0.8);
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #F0EEED; 
+  }
+
+/*footer*/
+
+footer{
+    font-family: arial;
+    background: darkgreen;
+    padding: 3em 1em;
+    color: #F0EEED;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid #F0EEED;
+} 
+
+footer a{
+    color: #F0EEED;
+}
+
+.footer-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-nav a{
+    padding: .75em;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-nav a:hover{
+  text-decoration: underline;  
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .intro {
+      background-attachment: scroll;
+    }
+    .locaties {
+        background-attachment: scroll;
+      }
+  }
+
+@media only screen and (min-width: 750px) {
+
+    .header--section{
+        width: 50%;  
+    }
+
+
+    .navbar #links a{
+        
+        font-size: 18px;
+        
+    }
+
+
+    .intro{
+        min-height: 100vh;
+        background-size: cover;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .header--section--missie{
+        width: 50%;
+    }
+    
+    .gallerij-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .gallerij-container figure{
+        margin: 25px;
+        max-width: 30%;
+    }
+
+    
+    /*locaties*/
+    .locaties{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+    }
+    
+    .tabel-locaties{
+        flex-wrap: nowrap;  
+        margin-left: 300px;
+        margin-right: 300px; 
+    }
+    
+    .table-one , .table-two , .table-three{
+        margin: 10px;
+
+    }
+
+    .footer-nav{
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+
+    
+}

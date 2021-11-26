@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+    
+}
+
+body{
+    background-color: black;
+    font-family: Arial, sans-serif, serif; 
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #f7f6f2;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* tekst stylen */
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h2, 
+p{
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: .75rem;
+}
+
+h3{
+    margin-bottom: .75rem;
+}
+
+p{
+    font-family: serif;
+    margin-bottom: .5rem;
+
+}
+
+/* navbar */
+header{
+    padding: 1em 0 2em;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #F0EEED;
+    font-family: serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+    justify-content: space-around;
+    font-size: 15px;
+    transition: 1s;
+}
+
+
+
+nav a{
+    display: inline-block;
+    padding: 14px 16px;
+    color: #F0EEED;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+nav a:hover{
+    background-color: #F0EEED;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*main content*/
+
+#intro{
+    padding: 20vh 0;
+    background-color: black;
+    background-image: url(/Img/4\ -\ NuuHhZL.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #F0EEED;
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.onzemissie{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px 20px;
+    border-radius: 25px;
+    
+}
+
+/* onze thee*/ 
+#onze-thee{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0EEED;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgb(255, 255, 255, .5);
+}
+
+
+.onze-thee__header{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 50%;
+    color: black;
+    padding: 20px 0px;
+}
+
+
+
+/*foto gallerij*/
+
+.gallerij-container{
+    max-width: 100%;
+    padding: 0px 20px;
+}
+
+
+.gallerij{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    column-gap: 15px;
+}
+ 
+
+.gallerij img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    transition: transform 250ms;
+    border-radius: 10px;
+}
+
+.gallerij img:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 8px black;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+/*locaties*/
+
+#locaties{
+    padding: 20vh 0;
+    background-color: black;
+    background-image: url(/Img/1\ -\ ME2WNoD.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #F0EEED;
+    text-align: center;
+    padding: 15vh 0;
+    margin-top: 0;
+}
+
+.locaties-tekst{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px 0px;
+    border-radius: 25px;   
+}
+
+.tabel-locaties{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+
+}
+
+.table-one , .table-two , .table-three{
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    padding: 10px 10px;
+    color: #F0EEED;
+    border-radius: 25px;
+  }
+
+
+
+/*footer*/
+
+ footer{
+     background-color: black;
+     color: #F0EEED;
+     padding: 10px 10px;
+     font-size: 15px;     
+     border-top: 1px solid #F0EEED;
+ } 
+
+
+ .footer-nav{
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ footer a{
+     margin-left: 10px;
+     margin: 10px;
+     color: white;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+
+ .footer-nav a{
+     padding: 0.75em;
+     text-decoration: none;
+ }
+
+ .footer-nav a:hover{
+    text-decoration: underline; 
+ }
